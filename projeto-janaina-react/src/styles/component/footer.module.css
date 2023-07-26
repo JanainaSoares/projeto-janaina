@@ -1,0 +1,16 @@
+.footerContainer {
+
+    background-color: #f3ca8da7;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footerContent {
+    color: #fff;
+    font-size: 1 rem;
+}
