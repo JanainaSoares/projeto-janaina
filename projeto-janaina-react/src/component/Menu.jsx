@@ -18,19 +18,16 @@ const Menu = () => {
                 <Link className={styles.menuLink} to='/contato'>Contato</Link>
             </li>
             <li>
-                <Link className={styles.menuLink} to='/portfolio'>Carnes</Link>
+                <Link className={styles.menuLink} to='/carnes'>Carnes</Link>
             </li>
             <li>
-                <Link className={styles.menuLink} to='/portfolio'>Massas</Link>
+                <Link className={styles.menuLink} to='/massas'>Massas</Link>
             </li> 
             <li>
-                <Link className={styles.menuLink} to='/portfolio'>Saladas</Link>
+                <Link className={styles.menuLink} to='/saladas'>Saladas</Link>
             </li>
             <li>
-                <Link className={styles.menuLink} to='/portfolio'>Sopas e Caldos</Link>
-            </li>
-            <li>
-                <Link className={styles.menuLink} to='/portfolio'>Doces</Link>
+                <Link className={styles.menuLink} to='/doces'>Doces</Link>
             </li>   
         </nav>
     )

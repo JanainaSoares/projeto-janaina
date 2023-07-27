@@ -23,11 +23,21 @@ function handleInputEmail(e) {
 function handleInputMensagem(e) {
   setMensagem(e.target.value)
 }
+
+function handleSubmit(e) {
+  e.preventDefault()
+  console.log(nome, email, mensagem)
+}
+
   return (
     <>
       <Header 
       title="Deixa seu recado" image={contato}
       />
+      <div className={styles.contatoTitulo}>
+        <h3>Iremos adorar receber um recado ou ate mesmo uma receita de familia...</h3>
+        <h3>afinal boas receitas sempre devem ser compartilhadas...</h3>
+      </div>
       <div>
         <form className={styles.form} onSubmit={()=>{}}>
           <input

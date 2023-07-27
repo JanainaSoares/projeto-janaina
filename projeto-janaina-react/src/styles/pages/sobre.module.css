@@ -1,0 +1,12 @@
+.sobreContainer {
+   
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+   }
+   
+   .sobreTitulo {
+       text-align: center;
+       padding: 1rem;
+   }
