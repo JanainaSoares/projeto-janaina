@@ -2,9 +2,13 @@ import Header from "../component/Header"
 
 import React from 'react'
 
-export const Carnes = () => {
+export const Carnes = ({ title, content, image }) => {
   return (
-    <div>Carnes</div>
+  <div className="carne">
+      {image && <img src={image} alt="Carne" />}
+      <h2>{title}</h2>
+      <p>{content}</p>
+  </div>
   )
 }
 
