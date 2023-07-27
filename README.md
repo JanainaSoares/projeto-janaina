@@ -32,6 +32,8 @@ Estrutura do projeto
 ***print***
 
 Tecnologia usadas
+React
+Firebase
 
 ****
 
@@ -39,6 +41,7 @@ Maiores Desafios
 
 Criar um projeto em React
 Fazer estilizaçāo no CSS
+Utilizar Firebase
 
 Como rodar o projeto localmente
 Siga os passos e inclua as informações abaixo:

@@ -6,6 +6,8 @@ import styles from '../styles/pages/contato.module.css'
 
 import contato from '../assets/contato.png'
 
+import database from '../service/firebase'
+import { ref, push, set } from 'firebase/database'
 
 const Contato = () => {
 const [nome, setNome] = useState('')
@@ -26,7 +28,18 @@ function handleInputMensagem(e) {
 
 function handleSubmit(e) {
   e.preventDefault()
-  console.log(nome, email, mensagem)
+  
+  const messageListRef = ref(database, 'mensagem') // cria uma colecao no db do firebase
+  const newMessageRef = push(messageListRef) // nova mensagem e enviar para a nossa colecao "mensagens"
+  set(newMessageRef, {
+    nome: nome,
+    email: email,
+    texto: mensagem
+  })
+
+  setNome('')
+  setEmail('')
+  setMensagem('')
 }
 
   return (
@@ -39,7 +52,7 @@ function handleSubmit(e) {
         <h3>afinal boas receitas sempre devem ser compartilhadas...</h3>
       </div>
       <div>
-        <form className={styles.form} onSubmit={()=>{}}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <input
             className={styles.formInput}
             typt="text"
